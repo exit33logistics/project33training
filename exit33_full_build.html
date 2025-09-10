@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Exit #33 Logistics — From Reentry to Revenue</title>
+<style>
+:root{
+  --red:#ff0000; --black:#000000; --white:#ffffff; --muted:#f5f5f5;
+  --container:1100px;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:var(--black); color:var(--white); line-height:1.5}
+.container{max-width:var(--container);margin:0 auto;padding:28px}
+.header-hero{background:var(--black);text-align:center;padding:56px 20px;border-bottom:4px solid var(--red)}
+.header-hero h1{font-size:2.6rem;margin:0 0 12px;color:var(--red);letter-spacing:0.6px}
+.header-hero p{margin:0 auto 18px;max-width:820px;color:var(--white);opacity:0.95}
+.cta-btn{display:inline-block;background:var(--red);color:var(--white);padding:10px 18px;border-radius:10px;text-decoration:none;font-weight:700;margin:8px;border:2px solid rgba(255,255,255,0.06)}
+.secondary-btn{background:transparent;color:var(--white);padding:10px 18px;border-radius:10px;text-decoration:none;border:2px solid var(--white);margin-left:8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:12px;padding:18px;border:1px solid rgba(255,255,255,0.06)}
+.section{padding:48px 0}
+.leader {text-align:left}
+.leader h3{margin:6px 0 6px 0;color:var(--red)}
+.module-title{display:flex;align-items:center;gap:12px}
+.module-title h3{margin:0;color:var(--red)}
+.lesson{background:rgba(255,255,255,0.02);padding:14px;border-radius:10px;margin-top:12px;border-left:4px solid var(--red)}
+.lesson h4{margin:0 0 8px 0;color:var(--white)}
+.lesson p{margin:6px 0;color:var(--muted)}
+.kv{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
+.kv .chip{background:rgba(255,255,255,0.03);padding:8px 12px;border-radius:999px;border:1px solid rgba(255,255,255,0.04)}
+.outcomes{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:18px}
+.outcome{background:rgba(255,255,255,0.02);padding:18px;border-radius:10px;text-align:center;border:1px solid rgba(255,255,255,0.04)}
+.footer{padding:36px 0;text-align:center;color:rgba(255,255,255,0.7);font-size:13px}
+.note{font-size:13px;color:rgba(255,255,255,0.7);margin-top:10px}
+.nav-dots{position:fixed;right:20px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:10px;z-index:1000}
+.dot{width:12px;height:12px;border-radius:50%;background:rgba(255,255,255,0.12);cursor:pointer;border:2px solid rgba(255,255,255,0.04)}
+.dot.active{background:var(--red);transform:scale(1.2)}
+@media (max-width:720px){
+  .header-hero h1{font-size:1.9rem}
+  .container{padding:16px}
+  .nav-dots{display:none}
+}
+
+/* simple utilities */
+.small{font-size:0.95rem;color:rgba(255,255,255,0.85)}
+.callout{background:rgba(255,255,255,0.02);padding:12px;border-radius:8px;border-left:4px solid var(--red);margin-top:12px}
+</style>
+</head>
+<body>
+<nav class="nav-dots" aria-hidden="false">
+  <div class="dot active" data-target="hero" title="Hero" aria-label="Go to hero"></div>
+  <div class="dot" data-target="mission" title="Mission" aria-label="Go to mission"></div>
+  <div class="dot" data-target="leadership" title="Leadership" aria-label="Go to leadership"></div>
+  <div class="dot" data-target="curriculum" title="Curriculum" aria-label="Go to curriculum"></div>
+  <div class="dot" data-target="outcomes" title="Outcomes" aria-label="Go to outcomes"></div>
+  <div class="dot" data-target="contact" title="Contact" aria-label="Go to contact"></div>
+</nav>
+
+<header id="hero" class="header-hero">
+  <div class="container">
+    <h1>Exit #33 Logistics</h1>
+    <p><strong>From Reentry to Revenue™</strong> — Creating dignified, trackable pathways from incarceration to income through compliant, people-first freight dispatching training.</p>
+    <a class="cta-btn" href="#curriculum">View Curriculum</a>
+    <a class="secondary-btn" href="#contact">Book Discovery Call</a>
+    <p class="note">No resale/license language included — content aligned to the latest program PDF.</p>
+  </div>
+</header>
+
+<main>
+  <section id="mission" class="section">
+    <div class="container">
+      <h2 style="color:var(--white);margin:0 0 12px">Our Mission & Impact</h2>
+      <div class="grid">
+        <div class="card">
+          <h3 style="color:var(--red)">Mission</h3>
+          <p class="small">Create dignified, trackable pathways from incarceration to income by teaching compliant, people-first freight dispatching. We center trauma-informed delivery and measurable outcomes.</p>
+        </div>
+        <div class="card">
+          <h3 style="color:var(--red)">Built Different</h3>
+          <p class="small">Self-paced • No LMS login required • Learner-owned materials • KPI tracking & verifiable certificate • Red-flag support protocol.</p>
+        </div>
+        <div class="card">
+          <h3 style="color:var(--red)">Who We Serve</h3>
+          <p class="small">Reentry and workforce learners seeking practical, compliant entry into the freight industry. No CDL required. Course designed to be accessible, actionable, and verifiable.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="leadership" class="section">
+    <div class="container">
+      <h2 style="margin-bottom:12px;color:var(--white)">Leadership Team</h2>
+      <div class="grid">
+        <div class="card leader">
+          <h3>Juan Kevin Boone</h3>
+          <div class="small">Managing Partner — Operations & Training</div>
+          <p class="small">Louisiana native who served 33 years before returning home focused on building safe, dignified on-ramps to legal income for justice-impacted people. Co-designs training that pairs strict compliance with human empathy.</p>
+          <div class="callout"><strong>Role focus:</strong> Live-ops simulation design, operational protocols, KPI structure.</div>
+        </div>
+        <div class="card leader">
+          <h3>Kammeshia "The Wolfette" Davis</h3>
+          <div class="small">Managing Partner — Strategy & Growth</div>
+          <p class="small">Founder of Exit #33 who recognized Juan's operational talent and built the blueprint converting lived experience into compliant, trackable entrepreneurship paths. Creator of multiple successful programs and learning frameworks.</p>
+          <div class="callout"><strong>Role focus:</strong> Curriculum integrity, learner pathways, community partnerships.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="curriculum" class="section">
+    <div class="container">
+      <h2 style="color:var(--white);margin-bottom:8px">Curriculum — 4 Core Modules</h2>
+      <p class="small">Each module is 30–45 minutes of focused learning with practical activities, examples, and a checkpoint. Below you will find complete lesson text ready to use in your build.</p>
+
+      <!-- Module 1 -->
+      <div class="card" style="margin-top:16px">
+        <div class="module-title">
+          <h3>Module 1: Orientation & Tools</h3>
+          <div style="margin-left:auto" class="kv">
+            <div class="chip">Goal: Setup, readiness, dispatcher scope</div>
+            <div class="chip">Length: 30–45 min</div>
+          </div>
+        </div>
+
+        <div class="lesson">
+          <h4>Lesson 1 — What a Dispatcher Actually Does</h4>
+          <p>This lesson defines the freight dispatcher role in plain language. A dispatcher connects carriers (truck drivers/operators) to freight opportunities, coordinates paperwork, and supports carriers through the booking and in-transit process.</p>
+          <p><strong>Scope & limits:</strong> Dispatchers may locate loads, prepare and deliver rate confirmations (RCs), request and archive BOLs, and support carrier communications. Dispatchers must not act as brokers (unless properly licensed) or handle freight payments between shippers and carriers.</p>
+          <p class="small"><strong>Activity:</strong> Write a 2–3 sentence role summary you can say on a call: "I help owner-operators find loads and manage paperwork so they can run revenue without administrative overhead."</p>
+          <p class="small"><strong>Key takeaway:</strong> Dispatchers support carrier logistics — they do not act as brokers or take custody of freight.</p>
+        </div>
+
+        <div class="lesson">
+          <h4>Lesson 2 — 60-Second Readiness Check & Tech Stack</h4>
+          <p>Before you take commercial calls, verify basic readiness: reliable internet, phone access, email, and a place to store documents. Typical tech includes a laptop/tablet, smartphone, free spreadsheet CRM, PDF reader, and cloud storage (Google Drive recommended).</p>
+          <p class="small"><strong>Setup exercise:</strong> Create a Google Drive folder titled <em>Dispatch Docs — [YourName]</em>. Add subfolders: Carrier Packets, RCs, BOLs, Invoices.</p>
+          <p class="small"><strong>Quick checklist:</strong> Email + phone tested; sample PDF upload; blank spreadsheet CRM ready.</p>
+        </div>
+
+        <div class="lesson">
+          <h4>Lesson 3 — Time Blocks, Focus & Note-Taking</h4>
+          <p>Reliable dispatchers are predictable. Block focused times to perform outbound searches, carrier outreach, and live-check-ins. Recommended cadence: two 60–90 minute focus blocks per day plus on-call windows for live loads.</p>
+          <p class="small"><strong>Activity:</strong> Draft a weekly schedule showing your daily focus blocks and on-call windows.</p>
+          <p class="small"><strong>Checkpoint:</strong> Confirm tech setup and schedule in your Drive folder.</p>
+        </div>
+      </div>
+
+      <!-- Module 2 -->
+      <div class="card" style="margin-top:18px">
+        <div class="module-title">
+          <h3>Module 2: Compliance & Documents</h3>
+          <div style="margin-left:auto" class="kv">
+            <div class="chip">Goal: Compliance boundaries & core docs</div>
+            <div class="chip">Length: 30–45 min</div>
+          </div>
+        </div>
+
+        <div class="lesson">
+          <h4>Lesson 1 — Compliance Basics & Roles</h4>
+          <p>Understand the parties: carrier (owns authority or runs under a carrier), dispatcher (manages logistics), broker (arranges freight between shipper and carrier), shipper (originator of goods). Dispatchers must avoid activities that legally require broker authority, such as negotiating rates with shippers or taking custody of freight.</p>
+          <p class="small"><strong>Red flags:</strong> Pretending to be a broker, handling ACH/settlements, or advertising "we pay drivers" without factoring/clear agreements.</p>
+        </div>
+
+        <div class="lesson">
+          <h4>Lesson 2 — Documents Walkthrough</h4>
+          <p>Core documents every dispatcher will encounter: Certificate of Insurance (COI), W-9, Rate Confirmation (RC), Rate Confirmation (RC) template, Bill of Lading (BOL), and Carrier Onboarding Packet.</p>
+          <p class="small"><strong>Purpose:</strong> COI proves insurance limits; W-9 provides tax info; RC documents agreed rate and load details; BOL is the shipment's receipt of goods.</p>
+          <p class="small"><strong>Activity:</strong> Review a sample W-9 and mark the fields you need to collect from a carrier. Place a copy in your Drive Carrier Packets folder.</p>
+        </div>
+
+        <div class="lesson">
+          <h4>Lesson 3 — Load Boards & Lanes 101</h4>
+          <p>Load boards are marketplaces for posted loads (DAT, Truckstop, etc.). "Lanes" refer to frequent origin/destination pairs; knowing lanes helps predict rates and turnaround times.</p>
+          <p class="small"><strong>Activity:</strong> Pick a lane between two neighboring states (for example: LA → TX) and note typical freight types and expected transit times.</p>
+          <p class="small"><strong>Checkpoint:</strong> Match each document (COI, W-9, RC, BOL) with its purpose in a short list and store it in Drive.</p>
+        </div>
+      </div>
+
+      <!-- Module 3 -->
+      <div class="card" style="margin-top:18px">
+        <div class="module-title">
+          <h3>Module 3: Carrier Acquisition</h3>
+          <div style="margin-left:auto" class="kv">
+            <div class="chip">Goal: Build pipeline, outreach, book first load</div>
+            <div class="chip">Length: 30–45 min</div>
+          </div>
+        </div>
+
+        <div class="lesson">
+          <h4>Lesson 1 — Carrier Pipeline & Simple CRM</h4>
+          <p>Carriers are your core partners. Your CRM can be a simple spreadsheet with columns: Carrier Name, MC#, Equipment, Contact, City/State, Notes, Status, Last Contact.</p>
+          <p class="small"><strong>Activity:</strong> Create a CRM with three mock entries (use realistic but fictional names) and save it to Drive.</p>
+        </div>
+
+        <div class="lesson">
+          <h4>Lesson 2 — Outreach Scripts (Cold & Warm)</h4>
+          <p>Scripts give consistency. Example cold script: "Hi, my name is [Your Name] with Exit #33 Logistics—do you take external dispatch support? We help owner-operators book reliable lanes and handle load paperwork. Are you open to a quick call about your availability?"</p>
+          <p class="small"><strong>Warm script:</strong> "Hey [Name], [referral] suggested I reach out—want to see if we can help smooth your load flow this month."</p>
+          <p class="small"><strong>Activity:</strong> Role-play a 2-minute cold call with a peer or record yourself practicing.</p>
+        </div>
+
+        <div class="lesson">
+          <h4>Lesson 3 — Booking Flow: Call → RC → BOL</h4>
+          <p>Booking flow is predictable: find a load → confirm carrier availability → send a Rate Confirmation (RC) → after pickup, obtain the Bill of Lading (BOL) → archive all documents.</p>
+          <p class="small"><strong>Sample RC fields:</strong> Load ID, Pickup/Delivery, Rate, Accessorials, Contact, Payment terms.</p>
+          <p class="small"><strong>Exercise:</strong> Walk through a sample booking with mock data and create the RC in your Drive folder.</p>
+          <p class="small"><strong>Checkpoint:</strong> Simulate a booking flow end-to-end and upload RC + BOL mock files.</p>
+        </div>
+      </div>
+
+      <!-- Module 4 -->
+      <div class="card" style="margin-top:18px">
+        <div class="module-title">
+          <h3>Module 4: Live Operations</h3>
+          <div style="margin-left:auto" class="kv">
+            <div class="chip">Goal: Run loads, handle exceptions, invoice cleanly</div>
+            <div class="chip">Length: 30–45 min</div>
+          </div>
+        </div>
+
+        <div class="lesson">
+          <h4>Lesson 1 — Live Ops: Check-ins & Tracking</h4>
+          <p>Consistent check-ins build trust. Standard check-ins: pre-pickup confirmation, en-route update, ETA update, and delivery confirmation with BOL attached.</p>
+          <p class="small"><strong>Tool tips:</strong> Use shared Google Sheets or SMS for quick updates; where possible, capture GPS or tracking numbers to document progress.</p>
+          <p class="small"><strong>Activity:</strong> Draft a 3-point daily check-in script and save it in Drive.</p>
+        </div>
+
+        <div class="lesson">
+          <h4>Lesson 2 — Exceptions: TONU, Layover, Detention</h4>
+          <p>Definitions and handling: TONU (Truck Ordered Not Used) — when a truck is ordered but not loaded; Layover — unplanned overnight placement at the shipper/receiver; Detention — time spent waiting to load/unload beyond allowed free time.</p>
+          <p class="small"><strong>Examples:</strong> TONU: driver shows up and shipper cancels. Detention: receiver delayed and driver waits 5+ hours.</p>
+          <p class="small"><strong>Documentation:</strong> Collect timestamps, photos, and any facility paperwork; flag to invoicing with clear notes.</p>
+        </div>
+
+        <div class="lesson">
+          <h4>Lesson 3 — Invoicing, Factoring & Archive</h4>
+          <p>Clean invoicing includes: Invoice, Rate Confirmation, BOL, and any detention/TONU paperwork. Factoring companies buy invoices for immediate cash—learn how to present a clean packet for faster funding.</p>
+          <p class="small"><strong>Activity:</strong> Assemble a sample invoice packet (Invoice + RC + BOL) and store it in your Drive archive.</p>
+          <p class="small"><strong>Checkpoint:</strong> Submit your invoice mockup to your mentor or peer for feedback.</p>
+        </div>
+      </div>
+
+      <div class="callout">
+        <strong>Assessment & Certificate</strong>
+        <p class="small">Each module ends with a short checkpoint quiz and a practical submission (example: upload RC+BOL mock). Successful completions generate a verifiable certificate with a unique reference ID that learners can share with employers or partners.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="outcomes" class="section">
+    <div class="container">
+      <h2 style="color:var(--white);margin-bottom:8px">Measurable Outcomes</h2>
+      <p class="small">We track practical KPIs so training success is visible and verifiable.</p>
+      <div class="outcomes">
+        <div class="outcome">
+          <div style="font-size:28px">📊</div>
+          <h4 style="margin:6px 0">Loads Booked</h4>
+          <div class="small">Per-learner tracking</div>
+        </div>
+        <div class="outcome">
+          <div style="font-size:28px">🎓</div>
+          <h4 style="margin:6px 0">Certificate Completions</h4>
+          <div class="small">Verifiable link & ID</div>
+        </div>
+        <div class="outcome">
+          <div style="font-size:28px">💭</div>
+          <h4 style="margin:6px 0">Reflection Participation</h4>
+          <div class="small">Engagement metrics</div>
+        </div>
+        <div class="outcome">
+          <div style="font-size:28px">⏱</div>
+          <h4 style="margin:6px 0">4 Modules</h4>
+          <div class="small">30–45 minutes each</div>
+        </div>
+      </div>
+
+      <div style="margin-top:18px" class="card">
+        <h4 style="color:var(--red);margin:0 0 6px 0">Program Features</h4>
+        <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-top:12px">
+          <div class="card">✅ Trauma-informed approach</div>
+          <div class="card">✅ Built-in KPIs</div>
+          <div class="card">✅ Verifiable certification</div>
+          <div class="card">✅ Live-ops simulation</div>
+          <div class="card">✅ Self-paced learning</div>
+          <div class="card">✅ No login required</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="card" style="text-align:center">
+        <h3 style="color:var(--red);margin:0 0 6px 0">Get Started Today</h3>
+        <p class="small">Ready to begin your journey from reentry to revenue? Book a discovery call or email our support team.</p>
+        <a class="cta-btn" href="https://calendly.com/exit33logisticsllc/discoverycall" target="_blank" rel="noopener">Book Discovery Call</a>
+        <a class="secondary-btn" href="https://beacons.ai/exit33logistics" target="_blank" rel="noopener">Visit Main Site</a>
+        <p class="note" style="margin-top:14px"><strong>Support:</strong> exit33logisticsllc@gmail.com</p>
+        <p class="note" style="margin-top:6px"><em>Exit #33 Logistics provides educational material for dispatch starters. No job placement or earnings guaranteed.</em></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">© Exit #33 Logistics™ — From Reentry to Revenue™</footer>
+
+<script>
+(function(){
+  const dots = Array.from(document.querySelectorAll('.dot'));
+  const sections = {
+    hero: document.getElementById('hero'),
+    mission: document.getElementById('mission'),
+    leadership: document.getElementById('leadership'),
+    curriculum: document.getElementById('curriculum'),
+    outcomes: document.getElementById('outcomes'),
+    contact: document.getElementById('contact')
+  };
+
+  dots.forEach((d)=>{
+    d.addEventListener('click', ()=> {
+      const target = d.getAttribute('data-target');
+      const el = sections[target];
+      if(el) el.scrollIntoView({behavior:'smooth', block:'start'});
+    });
+  });
+
+  // On scroll, update active dot
+  function updateDots(){
+    const scrollPos = window.scrollY + window.innerHeight/2;
+    Object.keys(sections).forEach((k, i)=>{
+      const el = sections[k];
+      if(!el) return;
+      const top = el.offsetTop;
+      const bottom = top + el.offsetHeight;
+      const dot = dots[i];
+      if(scrollPos >= top && scrollPos < bottom) {
+        dots.forEach(x=>x.classList.remove('active'));
+        if(dot) dot.classList.add('active');
+      }
+    });
+  }
+  window.addEventListener('scroll', updateDots);
+  // initial
+  updateDots();
+})();
+</script>
+</body>
+</html>

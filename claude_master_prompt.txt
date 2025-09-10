@@ -1,0 +1,29 @@
+You are a professional front-end developer + instructional designer.
+I uploaded a standalone HTML file (exit33_full_build.html). Use that file as the canonical source content and rebuild a clean, production-ready single-file website for Exit #33 Logistics.
+
+Requirements (do not deviate):
+- Color palette must be **exact**: red #ff0000, black #000000, white #ffffff. No other accent colors or gradients that change the palette.
+- Use the HTML I uploaded as the content source. Preserve and keep verbatim all course/module instructional content already in that file (do not replace with placeholders or summaries).
+- Output must be **one single HTML file** with embedded CSS and JS (so it can be copied/pasted and run directly). Do not output multiple files or external links for CSS/JS.
+- Remove any resale/license language (do not add reseller or licensing sections).
+- Make the following improvements only (do not rewrite module copy):
+  1. Accessibility:
+     - Add ARIA labels where helpful (nav dots, main sections).
+     - Ensure nav dots are keyboard-focusable (use <button> or <a>), with visible focus styles.
+     - Ensure color contrast passes basic WCAG (if text contrast is too low, add subtle darker overlay only — keep palette exact).
+  2. Responsiveness:
+     - Ensure layout is mobile-friendly; CTA buttons stack on narrow screens. Nav dots may hide on small screens.
+  3. Interaction:
+     - Smooth scroll for nav dots.
+     - Dot active state updates on scroll.
+     - Lightweight fade-in animations (CSS only).
+  4. Clean up minor HTML issues (unclosed tags, semantic headings) but **do not** alter the instructional content.
+- Add a placeholder certificate mechanism: include a client-side (JS) function that, given a learner name and module completion state, can generate a certificate **display** with a unique reference ID (random alphanumeric string). This is only a front-end visual (no backend). Keep it simple and visible on the Outcomes section.
+- When producing the final answer: return **only** the complete HTML file content (one code block). Do not add commentary, instructions, or extra files.
+
+Acceptance test:
+- The output file opens in a browser and shows: Hero -> Mission -> Leadership -> Curriculum (all 4 modules text present) -> Outcomes -> Contact.
+- The nav dots are keyboard accessible and update on scroll.
+- The certificate generator UI shows and produces a unique ref ID when tested in the browser.
+
+If anything in the uploaded HTML is malformed, fix it conservatively but keep the original instructional text exactly as-is.
